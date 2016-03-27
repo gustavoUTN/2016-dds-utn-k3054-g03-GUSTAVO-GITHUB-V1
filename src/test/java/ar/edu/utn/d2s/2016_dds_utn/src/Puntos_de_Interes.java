@@ -3,7 +3,7 @@ import org.junit.Test;
 
 public class Puntos_de_Interes {
 
-	String nombre = "Leonardo";
+	String nombre = "Pepe";
 	Object punto;
 
 	@Test
