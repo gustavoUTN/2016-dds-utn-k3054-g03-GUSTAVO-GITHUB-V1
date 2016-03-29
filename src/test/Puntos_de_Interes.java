@@ -1,44 +1,35 @@
+package ar.edu.utn.d2s;
+
 import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class Puntos_de_Interes {
 
 	String nombre = "Pepe";
-	Object punto;
+	Object punto ="hola";
 
 	@Test
-	public void nombreVacio() {
+	public void noNombreVacio() {
 		Puntos_de_Interes puntos_interes = new Puntos_de_Interes();
 
-		if (puntos_interes.nombre == null) {
-			fail("El nombre esta en null");
-		} else {
-			if (puntos_interes.nombre.isEmpty() == true) {
-				fail("El nombre es vacío");
-			}
+		assertFalse(puntos_interes.nombre == null);
+		assertFalse(puntos_interes.nombre.isEmpty());
+	}
+
+	@Test
+	public void noMasDe60caracteres() {
+		Puntos_de_Interes puntos_interes = new Puntos_de_Interes();
+
+		if (puntos_interes.nombre != null) {
+			assertFalse("Tiene mas de 60 caracteres?", puntos_interes.nombre.length() > 60);
 		}
 	}
 
 	@Test
-	public void masDe60caracteres() {
+	public void noPuntoNull() {
 		Puntos_de_Interes puntos_interes = new Puntos_de_Interes();
 
-		if (puntos_interes.nombre == null) {
-			fail("El nombre esta en null");
-		} else {
-			if (puntos_interes.nombre.length() > 60) {
-				fail("El nombre es tiene mas de 60 caracteres");
-			}
-		}
+		assertNotNull(puntos_interes.punto);
+
 	}
-
-	@Test
-	public void puntoNull() {
-		Puntos_de_Interes puntos_interes = new Puntos_de_Interes();
-
-		if (puntos_interes.punto == null) {
-			fail("El punto de interes no puede ser null");
-		}
-	}
-
 }
