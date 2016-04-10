@@ -1,6 +1,6 @@
-package ar.edu.utn.d2s;
+package puntoDeInteres.main;
 
-public class HORARIO {
+public class Horario {
 private String diaInicio;
 private String diaFin;
 private String horarioInicio;

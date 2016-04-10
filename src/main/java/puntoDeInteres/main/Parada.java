@@ -1,10 +1,10 @@
-package ar.edu.utn.d2s;
+package puntoDeInteres.main;
 import org.uqbar.geodds.Point;
 
-public class PARADA {
+public class Parada {
 private String icono;
 private Point coordenada;
-private DIRECCION direccion;
+private Direccion direccion;
 public String getIcono() {
 	return icono;
 }
@@ -17,10 +17,10 @@ public Point getCoordenada() {
 public void setCoordenada(Point coordenada) {
 	this.coordenada = coordenada;
 }
-public DIRECCION getDireccion() {
+public Direccion getDireccion() {
 	return direccion;
 }
-public void setDireccion(DIRECCION direccion) {
+public void setDireccion(Direccion direccion) {
 	this.direccion = direccion;
 }
 

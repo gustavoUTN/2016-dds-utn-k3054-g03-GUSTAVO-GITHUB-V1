@@ -1,6 +1,6 @@
-package ar.edu.utn.d2s;
+package puntoDeInteres.main;
 
-public class DATOSESPECIFICOS {
+public class DatosEspecificos {
 private int piso;
 private char departamento;
 private int unidad;

@@ -1,11 +1,11 @@
-package ar.edu.utn.d2s;
+package puntoDeInteres.main;
 import java.util.ArrayList;
 import org.uqbar.geodds.Point;
 import org.uqbar.geodds.Polygon;
 
-public class CGP extends PDI{
+public class Cgp extends Pdi{
 private String comuna;
-private ArrayList<SERVICIOCGP> servicios;
+private ArrayList<ServicioCgp> servicios;
 private ArrayList<Point> zona;//modificar tipo
 
 public String getComuna() {
@@ -14,10 +14,10 @@ public String getComuna() {
 public void setComuna(String comuna) {
 	this.comuna = comuna;
 }
-public ArrayList<SERVICIOCGP> getServicios() {
+public ArrayList<ServicioCgp> getServicios() {
 	return servicios;
 }
-public void setServicios(ArrayList<SERVICIOCGP> servicios) {
+public void setServicios(ArrayList<ServicioCgp> servicios) {
 	this.servicios = servicios;
 }
 public ArrayList<Point> getZona() {

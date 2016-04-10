@@ -1,19 +1,19 @@
-package ar.edu.utn.d2s;
+package puntoDeInteres.main;
 import java.util.List;
 
-public class SUCURSALBANCO extends PDI{
+public class SucursalBanco extends Pdi{
 private List<String> servicios;
-private HORARIO horario;
+private Horario horario;
 public List<String> getServicios() {
 	return servicios;
 }
 public void setServicios(List<String> servicios) {
 	this.servicios = servicios;
 }
-public HORARIO getHorario() {
+public Horario getHorario() {
 	return horario;
 }
-public void setHorario(HORARIO horario) {
+public void setHorario(Horario horario) {
 	this.horario = horario;
 }
 }

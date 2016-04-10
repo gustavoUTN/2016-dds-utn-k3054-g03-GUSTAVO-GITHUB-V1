@@ -1,6 +1,6 @@
-package ar.edu.utn.d2s;
+package puntoDeInteres.main;
 
-public class RUBRO {
+public class Rubro {
 private String nombre;
 private double radio;
 public String getNombre() {

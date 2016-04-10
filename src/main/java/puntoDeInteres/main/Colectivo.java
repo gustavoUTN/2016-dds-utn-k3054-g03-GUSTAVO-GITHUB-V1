@@ -1,4 +1,4 @@
-package ar.edu.utn.d2s;
+package puntoDeInteres.main;
 
 //import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -6,13 +6,13 @@ import java.util.Iterator;
 
 import org.uqbar.geodds.Point;
 
-public class COLECTIVO {
+public class Colectivo {
 private int linea;
-private ArrayList<PARADA> paradas;
+private ArrayList<Parada> paradas;
 
 public Boolean estaCercaDe(double aX,double aY){
 	Point unPunto = new Point(aX, aY);
-	Iterator<PARADA> iterador = this.getParadas().iterator();
+	Iterator<Parada> iterador = this.getParadas().iterator();
 	while(iterador.hasNext())
 		{
 	    if(iterador.next().getCoordenada().distance(unPunto)<0.1)//distancia se mide en KM
@@ -29,10 +29,10 @@ public int getLinea() {
 public void setLinea(int linea) {
 	this.linea = linea;
 }
-public ArrayList<PARADA> getParadas() {
+public ArrayList<Parada> getParadas() {
 	return paradas;
 }
-public void setParadas(ArrayList<PARADA> paradas) {
+public void setParadas(ArrayList<Parada> paradas) {
 	this.paradas = paradas;
 }
 

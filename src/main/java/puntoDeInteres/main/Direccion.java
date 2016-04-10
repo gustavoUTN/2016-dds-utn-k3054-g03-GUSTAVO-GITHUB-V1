@@ -1,6 +1,6 @@
-package ar.edu.utn.d2s;
+package puntoDeInteres.main;
 
-public class DIRECCION {
+public class Direccion {
 private String calle;
 private String entreCalles;
 private int numero;
